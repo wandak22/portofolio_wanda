@@ -1,7 +1,7 @@
 export default function Dashboard() {
     return (
       <>
-        asdf
+        Sudah berhasil push github silahkan tf kaka wanda
       </>
     );
 }
