@@ -1,7 +1,7 @@
 export default function Dashboard() {
     return (
       <>
-        test berhasil
+        sudah berhasil
       </>
     );
 }
