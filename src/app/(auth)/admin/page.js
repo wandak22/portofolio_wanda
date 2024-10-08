@@ -1,7 +1,7 @@
 export default function Dashboard() {
     return (
       <>
-        github done
+        github jajaL DAYAT
       </>
     );
 }
