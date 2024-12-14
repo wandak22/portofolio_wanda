@@ -28,15 +28,15 @@ export default function EditBlogs() {
       ]
     // const [categories, setCategories] = useState([]); // State for category options
 
-    const fetchCategories = async () => {
-        try {
-            const res = await fetch('/api/blogs'); // Assume endpoint for fetching categories exists
-            const categoryData = await res.json();
-            // setCategories(categoryData.data || []);
-        } catch (err) {
-            console.error("Error fetching categories:", err.message);
-        }
-    };
+    // const fetchCategories = async () => {
+    //     try {
+    //         const res = await fetch('/api/blogs'); // Assume endpoint for fetching categories exists
+    //         const categoryData = await res.json();
+    //         // setCategories(categoryData.data || []);
+    //     } catch (err) {
+    //         console.error("Error fetching categories:", err.message);
+    //     }
+    // };
 
     const fetchDataById = async () => {
         try {
@@ -72,9 +72,9 @@ export default function EditBlogs() {
 
                 let res = await fetch(`/api/blogs/${data._id}`, {
                     method: 'PUT',
-                    headers: {
-                        'Content-Type': 'application/json'
-                    },
+                    // headers: {
+                    //     'Content-Type': 'application/json'
+                    // },
                     body: JSON.stringify(body),
                 });
 
@@ -97,7 +97,7 @@ export default function EditBlogs() {
 
     useEffect(() => {
         fetchDataById();
-        fetchCategories();
+        // fetchCategories();
     }, []);
 
     return (
