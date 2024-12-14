@@ -1,4 +1,5 @@
 import { Inter } from "next/font/google";
+import AdminMenu from "../../components/AdminMenu"
 import "./global.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -11,24 +12,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
       <div className={inter.className}>
-        <header className="py-2 bg-white">
-          <nav className="w-full">
-            <div className="max-w-5xl mx-auto px-6 md:px-12 xl:px-6">
-              <div className="flex flex-wrap items-center justify-between">
-                <div>
-                  <a href="/admin">Admin Panel</a>
-                </div>
-                <div>
-                  <ul className="flex flex-row gap-6">
-                    <li>
-                      <a href="/admin/work">Work</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </nav>
-        </header>
+        <AdminMenu/>
         <main className="pt-5 max-w-5xl mx-auto px-6 md:px-12 xl:px-6"> 
           {children} 
         </main>
