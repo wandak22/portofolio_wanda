@@ -62,7 +62,7 @@ export default function Contact() {
 
             <p className="text-center margin-0 mx-auto w-2/3	">
                 lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
-                ipsum lorem ipsum lorem ipsum
+                ipsum lorem ipsum lorem ipsum iiii
             </p>
 
             <div className="md:flex mt-16">
