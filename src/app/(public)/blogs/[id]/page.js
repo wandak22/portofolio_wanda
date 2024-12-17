@@ -140,7 +140,7 @@ export default function Blogsbyid(){
             </div>
 
             <div className="w-full my-2">
-                <label>Komentar</label>
+                <label>Komentarr</label>
                 <Editor
                     id='komentar'
                     apiKey='cdb9kl0m02wk2wu5ce13qh55bt38qycdnc2c4vqclccpr9n4'
